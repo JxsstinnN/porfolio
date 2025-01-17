@@ -2,8 +2,11 @@
 import GitHub from "./icons/GitHub.astro"
 import NextJS from "./icons/NextJS.astro"
 import Tailwind from "./icons/Tailwind.astro"
+import Laravel from "./icons/Laravel.astro"
 import Link from "./icons/Link.astro"
 import LinkButton from "./LinkButton.astro"
+import JavaScript from "./icons/Javascript.astro"
+import AstroIcon from "./icons/AstroIcon.astro"
 
 const TAGS = {
   NEXT: {
@@ -16,25 +19,55 @@ const TAGS = {
     class: "bg-[#003159] text-white",
     icon: Tailwind,
   },
+  LARAVEL: {
+    name: "Laravel",
+    class: "bg-[#00315] text-white",
+    icon: Laravel,
+  },
+  JAVASCRIPT: {
+    name: "JavaScript",
+    class: "bg-yellow-400 text-black",
+    icon: JavaScript,
+  },
+  ASTRO: {
+    name: "Astro",
+    class: "bg-black text-white",
+    icon: AstroIcon,
+  }
 }
 const PROJECTS = [
   {
-    title: "SVGL - A beautiful library with SVG logos",
+    title: "AppPedidos - Una app completa para delivery en linea",
     description:
-      "Biblioteca de logos SVG de las marcas más populares. +10k visitas al mes. +2K svgs descargados. Creado desde cero con Next.js, React y Tailwind CSS.",
-    link: "https://svgl.vercel.app/",
-    github: "https://github.com/pheralb/svgl",
-    image: "/projects/svgl.webp",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
+      "App de pedidos en línea con panel de administración. Con multiples cambios de idiomas, manejo de sucursales y demas. Creada con Laravel, JavaScript y Tailwind CSS. Usuario de prueba: test01@gmail.com Contraseña: 12345678",
+    link: "https://shop.jtapplication.net",
+    image: "/projects/pedidos.webp",
+    tags: [TAGS.LARAVEL, TAGS.JAVASCRIPT ,TAGS.TAILWIND],
   },
   {
-    title: "AdventJS - Retos de programación con JavaScript y TypeScript",
+    title: "SuperMega - App para manejo y ventas de loterias",
     description:
-      "Plataforma gratuita con retos de programación. Más de 1 millón de visitas en un mes. +50K retos completados. Creada desde cero con Next.js, React y Tailwind CSS.",
-    link: "https://adventjs.dev",
-    image: "/projects/adventjs.webp",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
+      "App de manejo de loterias, recargas de saldo, pagos, reportes y manejo de vendedores. Creada con Laravel, JavaScript y Tailwind CSS. Usuario de prueba: corredor05 Contraseña: corredor05",
+    link: "https://loteria.dualsoft.com.do/admin",
+    image: "/projects/loteria.webp",
+    tags: [TAGS.LARAVEL, TAGS.TAILWIND],
   },
+  {
+    title: "CoopCo - Landing Page para la Cooperativa de Ahorro y Crédito de Constanza",
+    description:
+      "Landing page para la cooperativa de ahorro y crédito de Constanza. Creada con Astro y Tailwind CSS.",
+    link: "https://www.coopco.com.do/",
+    image: "/projects/coopco.webp",
+    tags: [TAGS.ASTRO, TAGS.TAILWIND],
+  },
+  {
+    title: "CoopRioGrande - Landing Page para la Cooperativa de Ahorro y Crédito de Rio Grande",
+    description:
+      "Landing page para la cooperativa de ahorro y crédito de Rio Grande. Creada con Astro y Tailwind CSS.",
+    link: "https://www.coopriogrande.com/",
+    image: "/projects/cooopriogrande.webp",
+    tags: [TAGS.ASTRO, TAGS.TAILWIND],
+  }
 ]
 ---
 
